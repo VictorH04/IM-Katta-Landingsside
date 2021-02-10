@@ -157,6 +157,7 @@ body {
   transition: all .5s ease-out; }
 
 .navcontent {
+  top: 0;
   background-color: var(--black-text);
   height: 0%;
   width: 100vw;
@@ -167,7 +168,7 @@ body {
   .navcontent-ul {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 200px);
     list-style-type: none;
     text-decoration: none;
     height: 100%;
@@ -233,6 +234,13 @@ body {
     @media screen and (max-width: 540px) {
       .landing-title {
         font-size: var(--fs-heading); } }
+    @media screen and (max-width: 425px) {
+      .landing-title {
+        font-size: var(--fs-text-big); } }
+    @media screen and (max-width: 315px) {
+      .landing-title {
+        padding-left: 1rem;
+        font-size: 1.75rem; } }
   .landing-typingcontainer {
     display: flex;
     flex-direction: row;
@@ -247,6 +255,9 @@ body {
       font-weight: 500;
       letter-spacing: .25rem;
       font-size: var(--fs-heading); }
+      @media screen and (max-width: 425px) {
+        .landing-typingcontainer--typing {
+          font-size: var(--fs-text-big); } }
     .landing-typingcontainer--cursor {
       align-content: center;
       border-right: .3rem solid #000;
@@ -268,6 +279,13 @@ body {
   @media screen and (max-width: 540px) {
     .features__title {
       font-size: var(--fs-title); } }
+  @media screen and (max-width: 425px) {
+    .features__title {
+      font-size: var(--fs-text-big); } }
+  @media screen and (max-width: 315px) {
+    .features__title {
+      padding-left: 1rem;
+      font-size: var(--fs-text-big); } }
 
 .features {
   display: grid;
@@ -290,6 +308,12 @@ body {
   @media only screen and (max-width: 450px) {
     .features {
       height: 250vh; } }
+  @media screen and (max-width: 425px) {
+    .features {
+      gap: 0rem; } }
+  @media screen and (max-width: 315px) {
+    .features {
+      padding: 2rem; } }
 
 .feature1 {
   display: grid;
@@ -321,6 +345,9 @@ body {
     letter-spacing: .05rem;
     font-size: 1.7rem;
     width: 50%; }
+    @media screen and (max-width: 425px) {
+      .feature1__text {
+        width: 100%; } }
 
 .feature2 {
   display: grid;
@@ -352,6 +379,9 @@ body {
     letter-spacing: .05rem;
     font-size: 1.7rem;
     width: 50%; }
+    @media screen and (max-width: 425px) {
+      .feature2__text {
+        width: 100%; } }
 
 .feature3 {
   display: grid;
@@ -384,6 +414,9 @@ body {
     justify-self: start;
     font-size: 1.7rem;
     width: 50%; }
+    @media screen and (max-width: 425px) {
+      .feature3__text {
+        width: 100%; } }
 
 .feature4 {
   display: grid;
@@ -415,6 +448,9 @@ body {
     letter-spacing: .05rem;
     font-size: 1.7rem;
     width: 50%; }
+    @media screen and (max-width: 425px) {
+      .feature4__text {
+        width: 100%; } }
 
 .domains {
   background-color: var(--black-2);
@@ -422,9 +458,18 @@ body {
   width: 100vw;
   display: flex;
   justify-content: center; }
+  @media screen and (max-width: 2000px) {
+    .domains {
+      height: 1350vh; } }
+  @media screen and (max-width: 1900px) {
+    .domains {
+      height: 1350vh; } }
+  @media screen and (max-width: 1700px) {
+    .domains {
+      height: 1350vh; } }
   @media only screen and (max-width: 1500px) {
     .domains {
-      height: 1400vh; } }
+      height: 1350vh; } }
   .domains-container {
     width: 100vw; }
     .domains-container--title {
@@ -438,6 +483,12 @@ body {
       font-family: 'Fira Code';
       font-weight: 300;
       color: #fff; }
+      @media screen and (max-width: 425px) {
+        .domains-container--title {
+          font-size: var(--fs-title); } }
+      @media screen and (max-width: 315px) {
+        .domains-container--title {
+          font-size: var(--fs-text-big); } }
     .domains-container--card {
       display: grid;
       grid-template-columns: 1fr;

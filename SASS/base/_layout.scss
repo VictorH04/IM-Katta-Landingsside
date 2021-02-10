@@ -171,6 +171,7 @@
 }
 
 .navcontent {
+    top: 0;
 	background-color: var(--black-text);
 	height: 0%;
 	width: 100vw;
@@ -182,7 +183,7 @@
 	&-ul {
 		display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 200px);
 
 		list-style-type: none;
 		text-decoration: none;
@@ -310,6 +311,15 @@
         @media screen and (max-width: 540px) {
 			font-size: var(--fs-heading);
         }
+
+        @media screen and (max-width: 425px) {
+			font-size: var(--fs-text-big);
+        }
+
+        @media screen and (max-width: 315px) {
+            padding-left: 1rem;
+            font-size: 1.75rem;
+        }
     }
 
     &-typingcontainer {
@@ -332,6 +342,10 @@
             font-weight: 500;
             letter-spacing: .25rem;
             font-size: var(--fs-heading);
+
+            @media screen and (max-width: 425px) {
+                font-size: var(--fs-text-big);
+            }
 
         }
         
@@ -365,6 +379,15 @@
     @media screen and (max-width: 540px) {
         font-size: var(--fs-title);
     }
+
+    @media screen and (max-width: 425px) {
+        font-size: var(--fs-text-big);
+    }
+
+    @media screen and (max-width: 315px) {
+        padding-left: 1rem;
+        font-size: var(--fs-text-big);
+    }
 }
 
 .features {
@@ -393,6 +416,13 @@
         height: 250vh;
     }
 
+    @media screen and (max-width: 425px) {
+        gap: 0rem;
+    }
+
+    @media screen and (max-width: 315px) {
+        padding: 2rem;
+    }
 }
 
 .feature1 {
@@ -432,6 +462,10 @@
         letter-spacing: .05rem;
         font-size: 1.7rem;
         width: 50%;
+
+        @media screen and (max-width: 425px) {
+            width: 100%;
+        }
     }
 }
 
@@ -472,6 +506,10 @@
         letter-spacing: .05rem;
         font-size: 1.7rem;
         width: 50%;
+
+        @media screen and (max-width: 425px) {
+            width: 100%;
+        }
     }
 }
 
@@ -513,6 +551,10 @@
         justify-self: start;
         font-size: 1.7rem;
         width: 50%;
+
+        @media screen and (max-width: 425px) {
+            width: 100%;
+        }
     }
 }
 
@@ -553,6 +595,10 @@
         letter-spacing: .05rem;
         font-size: 1.7rem;
         width: 50%;
+
+        @media screen and (max-width: 425px) {
+            width: 100%;
+        }
     }
 }
 
@@ -564,9 +610,22 @@
     display: flex;
     justify-content: center;
 
-    @media only screen and (max-width: 1500px) {
-        height: 1400vh;
+    @media screen and (max-width: 2000px) {
+        height: 1350vh;
     }
+
+    @media screen and (max-width: 1900px) {
+        height: 1350vh;
+    }
+    
+    @media screen and (max-width: 1700px) {
+        height: 1350vh;
+    }
+
+    @media only screen and (max-width: 1500px) {
+        height: 1350vh;
+    }
+
 
     &-container {
         width: 100vw;
@@ -585,6 +644,13 @@
             font-weight: 300;
             color: #fff;
 
+            @media screen and (max-width: 425px) {
+                font-size: var(--fs-title);
+            }
+
+            @media screen and (max-width: 315px) {
+                font-size: var(--fs-text-big);
+            }
         }
 
         &--card {
