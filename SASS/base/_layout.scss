@@ -297,6 +297,10 @@
 
 .landing {
     height: 80vh;
+    
+    @media screen and (max-width: 690px) {
+        height: 100vh;
+    }
 
     &-title {
         margin-top: 20rem;
@@ -308,11 +312,16 @@
         font-weight: 500;
         letter-spacing: .25rem;
         font-size: var(--fs-heading-big);
-
+        
+        @media screen and (max-width: 2000px) {
+            padding-top: 25rem;
+        }
+        
         @media screen and (max-width: 540px) {
-			font-size: var(--fs-heading);
+            font-size: var(--fs-heading);
         }
 
+        
         @media screen and (max-width: 425px) {
 			font-size: var(--fs-text-big);
         }
@@ -343,6 +352,7 @@
             font-weight: 500;
             letter-spacing: .25rem;
             font-size: var(--fs-heading);
+
 
             @media screen and (max-width: 425px) {
                 font-size: var(--fs-text-big);
@@ -376,6 +386,10 @@
     background-color: var(--black-1);
     font-size: var(--fs-heading);
     text-align: left;
+
+    @media screen and (max-width: 2000px) {
+        padding-top: 25rem;
+    }
 
     @media screen and (max-width: 540px) {
         font-size: var(--fs-title);
@@ -605,14 +619,14 @@
 
 
 .domains {
-    background-color: var(--black-2);
+    background-color: var(--black-1);
     height: 1320vh;
     width: 100vw;
     display: flex;
     justify-content: center;
 
     @media screen and (max-width: 2000px) {
-        height: 1350vh;
+        height: 1265vh;
     }
 
     @media screen and (max-width: 1900px) {
@@ -645,6 +659,11 @@
             font-weight: 300;
             color: #fff;
 
+            @media screen and (max-width: 2000px) {
+                padding-top: 25rem;
+                padding-bottom: 5rem;
+            }
+
             @media screen and (max-width: 425px) {
                 font-size: var(--fs-title);
             }
@@ -662,6 +681,8 @@
             // justify-content: center;
             margin: 10rem auto;
 
+            box-shadow: var(--shadow-dark-2);
+
 
             background-color: var(--grey);
 
@@ -675,12 +696,26 @@
                 font-weight: 300;
                 grid-area: top;
                 place-self: center;
+
+                @media screen and (max-width: 375px) {
+                    font-size: var(--fs-title);
+                }
+
+                @media screen and (max-width: 320px) {
+                    font-size: var(--fs-text-big);
+                }
             }
 
             &_domain {
                 font-size: var(--fs-text-big);
+                font-weight: 300;
+                letter-spacing: .15rem;
                 grid-area: bottom;
                 place-self: center;
+
+                @media screen and (max-width: 320px) {
+                    font-size: var(--fs-text);
+                }
             }
 
             &_link {
