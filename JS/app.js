@@ -8,9 +8,7 @@ let display = navContent.classList.toggle('display');
 
 const dropDownHome = document.getElementById('dropdown-home');
 const dropDownAbout = document.getElementById('dropdown-about');
-const dropDownProjects = document.getElementById('dropdown-projects');
-const dropDownSchoolprojects = document.getElementById('dropdown-schoolprojects');
-const dropDownContact = document.getElementById('dropdown-contact');
+const dropDownDomains = document.getElementById('dropdown-domains');
 
 navbarIcon.classList.remove('active');
 
@@ -74,11 +72,91 @@ function scrollFunc2() {
 
 dropDownHome.addEventListener('click', removeNav);
 dropDownAbout.addEventListener('click', removeNav);
-dropDownProjects.addEventListener('click', removeNav);
-dropDownSchoolprojects.addEventListener('click', removeNav);
-dropDownContact.addEventListener('click', removeNav);
+dropDownDomains.addEventListener('click', removeNav);
+
 
 function removeNav() {
 	navContent.style.height = '0%';
 	navbarIcon.classList.remove('active');
 }
+
+let _CONTENT = [ "Programmering", "Medieproduksjon", "Ideutvikling", "Foto & Filmproduksjon", "Adobe programmer", "Interessebasert opplæring"];
+                
+// Current sentence being processed
+let _PART = 0;
+
+// Character number of the current sentence being processed 
+let _PART_INDEX = 0;
+
+// Holds the handle returned from setInterval
+let _INTERVAL_VAL;
+
+// Element that holds the text
+let _ELEMENT = document.getElementById("text");
+
+// Implements typing effect
+function Type() { 
+	let text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX++;
+
+	// If full sentence has been displayed then start to delete the sentence after some time
+	if(text === _CONTENT[_PART]) {
+		clearInterval(_INTERVAL_VAL);
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Delete, 50);
+		}, 2000);
+	}
+}
+
+// Implements deleting effect
+function Delete() {
+	let text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX--;
+
+	// If sentence has been deleted then start to display the next sentence
+	if(text === '') {
+		clearInterval(_INTERVAL_VAL);
+
+		// If last sentence then display the first one, else move to the next
+		if(_PART == (_CONTENT.length - 1))
+			_PART = 0;
+		else
+			_PART++;
+		_PART_INDEX = 0;
+
+		// Start to display the next sentence after some time
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Type, 150);
+		}, 200);
+	}
+}
+
+// Start the typing effect on load
+_INTERVAL_VAL = setInterval(Type, 100);
+
+// const cardName = document.getElementById('cardName');
+// const cardDomain = document.getElementById('cardDomain');
+// // const cardLink = document.getElementById('cardLink');
+
+// let cardContent = [
+
+// 			elev1 = {
+// 				name: 'Edvard Høiby',
+// 				domain: 'http://edvard.imkatta.no',
+// 				index: 0
+// 			},
+
+// 			elev2 = {
+// 				name: 'Victor N. Hristov',
+// 				domain: 'http://victor.imkatta.no',
+// 				index: 1
+// 			}
+
+// ];
+
+// cardContent.forEach(el => {
+// 	cardName.textContent = cardContent.elev1.name;
+// 	cardDomain.textContent = cardContent
+// });

@@ -2,13 +2,10 @@
 
 :root {
     //* COLORS
-    --primary-purple: #4341B5;
-    --primary-indigo: #4867C7;
-    --primary-clay: #487EB0;
-    --primary-blue: #48ABC7;
-    --primary-seagrass: #44BDB6;
-    --primary-black: #353b48;
-    --primary-yellow: #e1b12c;
+    --black-1: #33364A;
+    --black-2: #2F3142;
+    --black-text: #2A2C39;
+    --orange: #EF6603;
 
     //* SHADOWS
     --shadow-light-1: 0 3.5rem 4rem rgba(0, 0, 0, .4);
@@ -71,36 +68,7 @@ html {
     min-height: 100vh;
     scroll-behavior: smooth;
 
-    @media screen and (min-width: $bp-largest) {}
-
-    @media screen and (min-width: $bp-large) {
-        
-    }
-
-    @media screen and (max-width: $bp-medium) {}
-
-    @media screen and (max-width: 800px) {}
-
-
-    @media screen and (max-width: $bp-small) {
-        
-    }
-
-    @media screen and (max-width: $bp-smallest) {}
-
-    @media screen and (max-width: 440px) {}
-
-    @media screen and (max-width: $bp-phone) {}
-
-    // // MEDIA QUERY
-    // @media screen and (max-width: $bp-large) {
-    //     font-size: 50%;
-    // }
-
-    // @media screen and (max-width: $bp-small) {
-    //     font-size: 25%;
-    // }
-
+   
 }
 
 body {
@@ -115,7 +83,6 @@ body {
     // overflow-y: scroll;
     scroll-behavior: smooth;
 
-    font-family: Saira;
-    background-color: var(--primary-black);
+    background-color: #fff;
     // background-image: linear-gradient(to right bottom, #fff7e4, #84817a);
 }
