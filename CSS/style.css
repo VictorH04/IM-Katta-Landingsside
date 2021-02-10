@@ -225,6 +225,9 @@ body {
 
 .landing {
   height: 80vh; }
+  @media screen and (max-width: 690px) {
+    .landing {
+      height: 100vh; } }
   .landing-title {
     margin-top: 20rem;
     text-align: center;
@@ -233,6 +236,9 @@ body {
     font-weight: 500;
     letter-spacing: .25rem;
     font-size: var(--fs-heading-big); }
+    @media screen and (max-width: 2000px) {
+      .landing-title {
+        padding-top: 25rem; } }
     @media screen and (max-width: 540px) {
       .landing-title {
         font-size: var(--fs-heading); } }
@@ -278,6 +284,9 @@ body {
   background-color: var(--black-1);
   font-size: var(--fs-heading);
   text-align: left; }
+  @media screen and (max-width: 2000px) {
+    .features__title {
+      padding-top: 25rem; } }
   @media screen and (max-width: 540px) {
     .features__title {
       font-size: var(--fs-title); } }
@@ -455,14 +464,14 @@ body {
         width: 100%; } }
 
 .domains {
-  background-color: var(--black-2);
+  background-color: var(--black-1);
   height: 1320vh;
   width: 100vw;
   display: flex;
   justify-content: center; }
   @media screen and (max-width: 2000px) {
     .domains {
-      height: 1350vh; } }
+      height: 1265vh; } }
   @media screen and (max-width: 1900px) {
     .domains {
       height: 1350vh; } }
@@ -485,6 +494,10 @@ body {
       font-family: 'Fira Code';
       font-weight: 300;
       color: #fff; }
+      @media screen and (max-width: 2000px) {
+        .domains-container--title {
+          padding-top: 25rem;
+          padding-bottom: 5rem; } }
       @media screen and (max-width: 425px) {
         .domains-container--title {
           font-size: var(--fs-title); } }
@@ -497,6 +510,7 @@ body {
       grid-template-rows: repeat(2, 1fr);
       grid-template-areas: "top" "bottom";
       margin: 10rem auto;
+      box-shadow: var(--shadow-dark-2);
       background-color: var(--grey);
       height: 30vh;
       width: 75vw; }
@@ -507,10 +521,21 @@ body {
         font-weight: 300;
         grid-area: top;
         place-self: center; }
+        @media screen and (max-width: 375px) {
+          .domains-container--card_name {
+            font-size: var(--fs-title); } }
+        @media screen and (max-width: 320px) {
+          .domains-container--card_name {
+            font-size: var(--fs-text-big); } }
       .domains-container--card_domain {
         font-size: var(--fs-text-big);
+        font-weight: 300;
+        letter-spacing: .15rem;
         grid-area: bottom;
         place-self: center; }
+        @media screen and (max-width: 320px) {
+          .domains-container--card_domain {
+            font-size: var(--fs-text); } }
       .domains-container--card_link {
         color: var(--orange); }
 

@@ -136,27 +136,181 @@ function Delete() {
 // Start the typing effect on load
 _INTERVAL_VAL = setInterval(Type, 100);
 
-// const cardName = document.getElementById('cardName');
-// const cardDomain = document.getElementById('cardDomain');
-// // const cardLink = document.getElementById('cardLink');
+const cardName = document.getElementById('cardName');
+const cardDomain = document.getElementById('cardDomain');
 
-// let cardContent = [
+const domainsContainer = document.querySelector('.domains-container');
+// const cardLink = document.getElementById('cardLink');
 
-// 			elev1 = {
-// 				name: 'Edvard Høiby',
-// 				domain: 'http://edvard.imkatta.no',
-// 				index: 0
-// 			},
+let cardContent = [
 
-// 			elev2 = {
-// 				name: 'Victor N. Hristov',
-// 				domain: 'http://victor.imkatta.no',
-// 				index: 1
-// 			}
+				{
+				name: 'Victor N. Hristov',
+				domain: 'http://victor.imkatta.no',
+			},
 
-// ];
+            {
+                name: 'Edvard Høiby',
+                domain: 'http://edvard.imkatta.no',
+            },
 
-// cardContent.forEach(el => {
-// 	cardName.textContent = cardContent.elev1.name;
-// 	cardDomain.textContent = cardContent
-// });
+            {
+                name: 'Martha Baldishol',
+                domain: 'http://martha.imkatta.no',
+            },
+
+			{
+                name: 'Endre Møller Berg',
+                domain: 'http://endre.imkatta.no',
+            },
+
+			{
+                name: 'Adrian Bjørndahl',
+                domain: 'http://adrianb.imkatta.no',
+            },
+
+			{
+                name: 'Pavlos Douvlos',
+                domain: 'http://pavlos.imkatta.no',
+            },
+
+			{
+                name: 'Eivind Solum Eikefjord',
+                domain: 'http://eivind.imkatta.no',
+            },
+
+			{
+                name: 'Marcus Flaterudhagen',
+                domain: 'http://marcus.imkatta.no',
+            },
+
+			{
+                name: 'Georg Flermoen',
+                domain: 'http://georg.imkatta.no',
+            },
+
+			{
+                name: 'Mats Johannes Gunneng',
+                domain: 'http://johannes.imkatta.no',
+            },
+
+			{
+                name: 'Henrik Skarstad Hagen',
+                domain: 'http://henrik.imkatta.no',
+            },
+
+			{
+                name: 'Bjørn Holmsand',
+                domain: 'http://bjorn.imkatta.no',
+            },
+
+			{
+                name: 'Amund Holmsand',
+                domain: 'http://amund.imkatta.no',
+            },
+
+			{
+                name: 'Caleb Emmanuel Holst',
+                domain: 'http://caleb.imkatta.no',
+            },
+
+			{
+                name: 'Joakim Isaksen',
+                domain: 'http://joakim.imkatta.no',
+            },
+
+			{
+                name: 'Henning Iversen',
+                domain: 'http://henning.imkatta.no',
+            },
+
+			{
+                name: 'Martin Kulvedrøsten Myhre',
+                domain: 'http://martin.imkatta.no',
+            },
+
+			{
+                name: 'Celine Sunniva Myklebust',
+                domain: 'http://celine.imkatta.no',
+            },
+
+			{
+                name: 'Jonathan Mickelson Myrvold',
+                domain: 'http://jonathan.imkatta.no',
+            },
+
+			{
+                name: 'Sjur Nordlien',
+                domain: 'http://sjur.imkatta.no',
+            },
+
+			{
+                name: 'Peder Oppegård',
+                domain: 'http://peder.imkatta.no',
+            },
+
+			{
+                name: 'Hans Arve Åsen Østerhagen',
+                domain: 'http://hans.imkatta.no',
+            },
+
+			{
+                name: 'Sondre Røste-Kise',
+                domain: 'http://sondre.imkatta.no',
+            },
+
+			{
+                name: 'Eirik Sjøløkken',
+                domain: 'http://eirik.imkatta.no',
+            },
+
+			{
+                name: 'Jesper Skjeflo',
+                domain: 'http://jesper.imkatta.no',
+            },
+
+			{
+                name: 'Lars Inge Syverinsen',
+                domain: 'http://lars.imkatta.no',
+            },
+
+			{
+                name: 'Jostein Stoltz Tajesveen',
+                domain: 'http://jostein.imkatta.no',
+            },
+
+			{
+                name: 'Adrian Aas Torp',
+                domain: 'http://adriant.imkatta.no',
+            },
+
+			{
+                name: 'Nora Helene Wagenius',
+                domain: 'http://nora.imkatta.no',
+            },
+
+			{
+                name: 'Joachim Opseth Wilhelmsen',
+                domain: 'http://joachimo.imkatta.no',
+            },	
+
+];
+
+function replaceCard() {
+
+    
+    cardContent.forEach(cardContent => {
+        let htmlTemp = `<div class="domains-container--card">
+
+		<h1 class="domains-container--card_name">${cardContent.name}</h1>
+		<h3 class="domains-container--card_domain"><a class="domains-container--card_link" href="${cardContent.domain}" target="_blank">${cardContent.domain}</a></h3>
+
+	</div>`
+
+        domainsContainer.innerHTML += htmlTemp;
+    });
+
+    return cardContent;
+}
+
+replaceCard();
