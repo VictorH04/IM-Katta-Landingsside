@@ -6,6 +6,7 @@
     --black-2: #2F3142;
     --black-text: #2A2C39;
     --orange: #EF6603;
+    --grey: #36393a;
 
     //* SHADOWS
     --shadow-light-1: 0 3.5rem 4rem rgba(0, 0, 0, .4);
@@ -83,6 +84,6 @@ body {
     // overflow-y: scroll;
     scroll-behavior: smooth;
 
-    background-color: #fff;
+    background-color: var(--grey);
     // background-image: linear-gradient(to right bottom, #fff7e4, #84817a);
 }

@@ -303,6 +303,7 @@
 
         text-align: center;
 
+        color: #fff;
         font-family: 'Fira Code';
         font-weight: 500;
         letter-spacing: .25rem;
@@ -333,7 +334,7 @@
     
         &--typing {
             display: inline-block;
-            color: #000;
+            color: #fff;
             margin-top: 10rem;
 
             // text-align: center;
@@ -353,7 +354,7 @@
             // content:'';
             // display:inline-block;
             align-content: center;
-            border-right: .3rem solid #000;
+            border-right: .3rem solid #fff;
             height: 10%;
             margin-top: 10rem;
             animation-name: blinking-cursor;
@@ -662,12 +663,13 @@
             margin: 10rem auto;
 
 
-            background-color: #fff;
+            background-color: var(--grey);
 
             height: 30vh;
             width: 75vw;
 
             &_name {
+                color: #fff;
                 font-size: var(--fs-heading);
                 font-family: 'Fira Code';
                 font-weight: 300;
@@ -679,6 +681,10 @@
                 font-size: var(--fs-text-big);
                 grid-area: bottom;
                 place-self: center;
+            }
+
+            &_link {
+                color: var(--orange);
             }
         }
 

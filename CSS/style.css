@@ -4,6 +4,7 @@
   --black-2: #2F3142;
   --black-text: #2A2C39;
   --orange: #EF6603;
+  --grey: #36393a;
   --shadow-light-1: 0 3.5rem 4rem rgba(0, 0, 0, .4);
   --shadow-dark-1: 0 2rem 6rem rgba(0, 0, 0, .4);
   --shadow-dark-2: 0 2rem 4rem rgba(0, 0, 0, .6);
@@ -51,7 +52,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background-color: #fff; }
+  background-color: var(--grey); }
 
 .nav {
   width: 100%;
@@ -227,6 +228,7 @@ body {
   .landing-title {
     margin-top: 20rem;
     text-align: center;
+    color: #fff;
     font-family: 'Fira Code';
     font-weight: 500;
     letter-spacing: .25rem;
@@ -249,7 +251,7 @@ body {
     justify-content: center; }
     .landing-typingcontainer--typing {
       display: inline-block;
-      color: #000;
+      color: #fff;
       margin-top: 10rem;
       font-family: 'Fira Code';
       font-weight: 500;
@@ -260,7 +262,7 @@ body {
           font-size: var(--fs-text-big); } }
     .landing-typingcontainer--cursor {
       align-content: center;
-      border-right: .3rem solid #000;
+      border-right: .3rem solid #fff;
       height: 10%;
       margin-top: 10rem;
       animation-name: blinking-cursor;
@@ -495,10 +497,11 @@ body {
       grid-template-rows: repeat(2, 1fr);
       grid-template-areas: "top" "bottom";
       margin: 10rem auto;
-      background-color: #fff;
+      background-color: var(--grey);
       height: 30vh;
       width: 75vw; }
       .domains-container--card_name {
+        color: #fff;
         font-size: var(--fs-heading);
         font-family: 'Fira Code';
         font-weight: 300;
@@ -508,6 +511,8 @@ body {
         font-size: var(--fs-text-big);
         grid-area: bottom;
         place-self: center; }
+      .domains-container--card_link {
+        color: var(--orange); }
 
 @keyframes blinking-cursor {
   0% {
