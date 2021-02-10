@@ -1,0 +1,121 @@
+/* ===== Universal Things ===== */
+
+:root {
+    //* COLORS
+    --primary-purple: #4341B5;
+    --primary-indigo: #4867C7;
+    --primary-clay: #487EB0;
+    --primary-blue: #48ABC7;
+    --primary-seagrass: #44BDB6;
+    --primary-black: #353b48;
+    --primary-yellow: #e1b12c;
+
+    //* SHADOWS
+    --shadow-light-1: 0 3.5rem 4rem rgba(0, 0, 0, .4);
+    --shadow-dark-1: 0 2rem 6rem rgba(0, 0, 0, .4);
+    --shadow-dark-2: 0 2rem 4rem rgba(0, 0, 0, .6);
+    --shadow-dark-3: 0 1.5rem 7rem rgba(0, 0, 0, .8);
+    --shadow-light-4: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+    //* BORDERS
+    --border-bottom-1: .2rem solid #000;
+    --border-bottom-2: .5rem solid #2980b9;
+    --border-bottom-3: .5rem solid #48ABC7;
+    --border-bottom-4: .1rem solid #ffd300;
+    --border-bottom-5: .5rem solid #ffd300;
+    --border-bottom-6: .2rem solid #40437c;
+    --border-bottom-7: .5rem solid #fff;
+    --border-1: .5rem solid #48ABC7;
+    --border-2: .5rem solid #fff;
+
+    //* MARGINS
+    --title-margin: 5rem;
+    --top-margin: 2.5rem;
+    --bottom-margin: 2.5rem;
+    --left-margin: 5rem;
+
+    //* PADDINGS
+    --title-padding: 22.5rem 0rem 10rem 7.5rem;
+    --big-padding: 17.5rem 7.5rem;
+
+
+    //* FONT-SIZES
+    --fs-heading-big: 4rem;
+    --fs-heading: 3rem;
+    --fs-title: 2.5rem;
+    --fs-text-big: 2rem;
+    --fs-text: 1.5rem;
+}
+
+/* MEDIA QUERY SIZES */
+$bp-largest: 75em; // 1200px === 75em
+$bp-large: 68.75em; // 1100px === 68.75em
+$bp-medium: 56.25em; // 900px === 56.25em
+$bp-small: 37.5em; // 600px === 37.5em
+$bp-smallest: 31.25em; // 500px === 31.25em
+$bp-phone: 23.75em; // 380px === 23.75em
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // ! This defines what 1rem is.
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Saira', sans-serif;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+
+    @media screen and (min-width: $bp-largest) {}
+
+    @media screen and (min-width: $bp-large) {
+        
+    }
+
+    @media screen and (max-width: $bp-medium) {}
+
+    @media screen and (max-width: 800px) {}
+
+
+    @media screen and (max-width: $bp-small) {
+        
+    }
+
+    @media screen and (max-width: $bp-smallest) {}
+
+    @media screen and (max-width: 440px) {}
+
+    @media screen and (max-width: $bp-phone) {}
+
+    // // MEDIA QUERY
+    // @media screen and (max-width: $bp-large) {
+    //     font-size: 50%;
+    // }
+
+    // @media screen and (max-width: $bp-small) {
+    //     font-size: 25%;
+    // }
+
+}
+
+body {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 100vh;
+    // min-height: 100vh;
+    // min-width: 100vw;
+    // display: grid;
+    // place-items: center;
+    overflow-x: hidden;
+    // overflow-y: scroll;
+    scroll-behavior: smooth;
+
+    font-family: Saira;
+    background-color: var(--primary-black);
+    // background-image: linear-gradient(to right bottom, #fff7e4, #84817a);
+}
