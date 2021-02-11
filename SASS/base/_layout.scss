@@ -630,15 +630,39 @@
     }
 
     @media screen and (max-width: 1900px) {
-        height: 1350vh;
+        height: 1300vh;
     }
     
     @media screen and (max-width: 1700px) {
-        height: 1350vh;
+        height: 1300vh;
     }
 
     @media only screen and (max-width: 1500px) {
-        height: 1350vh;
+        height: 1300vh;
+    }
+
+    @media screen and (max-width: 1024px) {
+        height: 1300vh;
+    }
+
+    @media only screen and (max-width: 768px) {
+        height: 1300vh;
+    }
+
+    @media only screen and (max-width: 650px) {
+        height: 1300vh;
+    }
+
+    @media only screen and (max-width: 425px) {
+        height: 1300vh;
+    }
+
+    @media only screen and (max-width: 375px) {
+        height: 1300vh;
+    }
+
+    @media only screen and (max-width: 320px) {
+        height: 1300vh;
     }
 
 
@@ -698,7 +722,8 @@
                 place-self: center;
 
                 @media screen and (max-width: 375px) {
-                    font-size: var(--fs-title);
+                    font-size: var(--fs-text-big);
+                    text-align: center;
                 }
 
                 @media screen and (max-width: 320px) {
@@ -713,6 +738,11 @@
                 grid-area: bottom;
                 place-self: center;
 
+                @media screen and (max-width: 375px) {
+                    font-size: var(--fs-text);
+                    text-align: center;
+                }
+
                 @media screen and (max-width: 320px) {
                     font-size: var(--fs-text);
                 }
@@ -725,6 +755,60 @@
 
 
     }
+}
+
+.footer {
+    background-color: var(--black-2);
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-container {
+
+        &--text {
+            font-weight: 100;
+            color: #fff;
+            font-size: var(--fs-heading);
+
+            &-underline {
+                border-left: .2rem solid var(--orange);
+                border-right: .2rem solid var(--orange);
+                padding: 0 1rem;
+                margin: 0 1rem;
+                text-decoration: none;
+                color: var(--orange);
+            }
+
+            @media screen and (max-width: 850px) {
+                font-size: var(--fs-text-big);
+                text-align: center;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: var(--fs-text-big);
+                text-align: center;
+            }
+
+            @media screen and (max-width: 425px) {
+                font-size: var(--fs-text);
+                text-align: center;
+            }
+
+            @media screen and (max-width: 375px) {
+                font-size: var(--fs-text);
+                text-align: center;
+            }
+
+            @media screen and (max-width: 320px) {
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+
+
 }
 
 @keyframes blinking-cursor {
