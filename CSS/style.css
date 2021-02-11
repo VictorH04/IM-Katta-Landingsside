@@ -245,6 +245,12 @@ body {
     @media screen and (max-width: 425px) {
       .landing-title {
         font-size: var(--fs-text-big); } }
+    @media screen and (max-width: 500px) {
+      .landing-title {
+        margin-top: 7.5rem; } }
+    @media only screen and (max-width: 375px) {
+      .landing-title {
+        margin-top: 7.5rem; } }
     @media screen and (max-width: 315px) {
       .landing-title {
         padding-left: 1rem;
@@ -484,6 +490,12 @@ body {
   @media screen and (max-width: 1024px) {
     .domains {
       height: 1300vh; } }
+  @media only screen and (max-height: 812px) {
+    .domains {
+      height: 1340vh; } }
+  @media only screen and (max-height: 768px) {
+    .domains {
+      height: 1340vh; } }
   @media only screen and (max-width: 768px) {
     .domains {
       height: 1300vh; } }
@@ -493,9 +505,18 @@ body {
   @media only screen and (max-width: 425px) {
     .domains {
       height: 1300vh; } }
+  @media only screen and (max-width: 416px) {
+    .domains {
+      height: 1320vh; } }
+  @media only screen and (max-width: 380px) {
+    .domains {
+      height: 1345vh; } }
   @media only screen and (max-width: 375px) {
     .domains {
-      height: 1300vh; } }
+      height: 1420vh; } }
+  @media screen and (max-width: 360px) {
+    .domains {
+      height: 1380vh; } }
   @media only screen and (max-width: 320px) {
     .domains {
       height: 1300vh; } }
@@ -516,9 +537,12 @@ body {
         .domains-container--title {
           padding-top: 25rem;
           padding-bottom: 5rem; } }
+      @media screen and (max-width: 500px) {
+        .domains-container--title {
+          font-size: var(--fs-text-big); } }
       @media screen and (max-width: 425px) {
         .domains-container--title {
-          font-size: var(--fs-title); } }
+          font-size: var(--fs-text-big); } }
       @media screen and (max-width: 315px) {
         .domains-container--title {
           font-size: var(--fs-text-big); } }
@@ -539,10 +563,16 @@ body {
         font-weight: 300;
         grid-area: top;
         place-self: center; }
+        @media screen and (max-width: 414px) {
+          .domains-container--card_name {
+            font-size: var(--fs-text-big); } }
         @media screen and (max-width: 375px) {
           .domains-container--card_name {
             font-size: var(--fs-text-big);
             text-align: center; } }
+        @media screen and (max-width: 360px) {
+          .domains-container--card_name {
+            font-size: var(--fs-text-big); } }
         @media screen and (max-width: 320px) {
           .domains-container--card_name {
             font-size: var(--fs-text-big); } }
@@ -555,6 +585,10 @@ body {
         @media screen and (max-width: 375px) {
           .domains-container--card_domain {
             font-size: var(--fs-text);
+            text-align: center; } }
+        @media screen and (max-width: 360px) {
+          .domains-container--card_domain {
+            font-size: 1.25rem;
             text-align: center; } }
         @media screen and (max-width: 320px) {
           .domains-container--card_domain {

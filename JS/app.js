@@ -156,7 +156,7 @@ let cardContent = [
     
     {
         name: 'Joakim Isaksen',
-        domain: 'http://joakim.imkatta.no',
+        domain: 'http://joakimi.imkatta.no',
     },
     
     {
@@ -195,7 +195,7 @@ let cardContent = [
     },
     
     {
-        name: 'Mats Johannes Gunneng',
+        name: 'M. Johannes Gunneng',
         domain: 'http://johannes.imkatta.no',
     },
             
@@ -251,7 +251,7 @@ let cardContent = [
     },
     
     {
-        name: 'Hans Arve Å. Østerhagen',
+        name: 'Hans A. Å. Østerhagen',
         domain: 'http://hans.imkatta.no',
     },
     
@@ -271,7 +271,7 @@ let cardContent = [
     },
     
     {
-        name: 'Lars Inge Syverinsen',
+        name: 'Lars I. Syverinsen',
         domain: 'http://lars.imkatta.no',
     },
     

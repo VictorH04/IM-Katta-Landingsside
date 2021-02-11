@@ -326,6 +326,14 @@
 			font-size: var(--fs-text-big);
         }
 
+        @media screen and (max-width: 500px) {
+            margin-top: 7.5rem;
+        }
+
+        @media only screen and (max-width: 375px) {
+            margin-top: 7.5rem;
+        }
+
         @media screen and (max-width: 315px) {
             padding-left: 1rem;
             font-size: 1.75rem;
@@ -645,6 +653,14 @@
         height: 1300vh;
     }
 
+    @media only screen and (max-height: 812px) {
+        height: 1340vh;
+    }
+    
+    @media only screen and (max-height: 768px) {
+        height: 1340vh;
+    }
+
     @media only screen and (max-width: 768px) {
         height: 1300vh;
     }
@@ -657,8 +673,21 @@
         height: 1300vh;
     }
 
+    @media only screen and (max-width: 416px) {
+        height: 1320vh;
+    }
+
+
+    @media only screen and (max-width: 380px) {
+        height: 1345vh;
+    }
+
     @media only screen and (max-width: 375px) {
-        height: 1300vh;
+        height: 1420vh;
+    }
+
+    @media screen and (max-width: 360px) {
+        height: 1380vh;
     }
 
     @media only screen and (max-width: 320px) {
@@ -688,8 +717,12 @@
                 padding-bottom: 5rem;
             }
 
+            @media screen and (max-width: 500px) {
+                font-size: var(--fs-text-big);
+            }
+
             @media screen and (max-width: 425px) {
-                font-size: var(--fs-title);
+                font-size: var(--fs-text-big);
             }
 
             @media screen and (max-width: 315px) {
@@ -721,9 +754,18 @@
                 grid-area: top;
                 place-self: center;
 
+                @media screen and (max-width: 414px) {
+                    font-size: var(--fs-text-big);
+                }
+    
+
                 @media screen and (max-width: 375px) {
                     font-size: var(--fs-text-big);
                     text-align: center;
+                }
+
+                @media screen and (max-width: 360px) {
+                    font-size: var(--fs-text-big);
                 }
 
                 @media screen and (max-width: 320px) {
@@ -740,6 +782,11 @@
 
                 @media screen and (max-width: 375px) {
                     font-size: var(--fs-text);
+                    text-align: center;
+                }
+
+                @media screen and (max-width: 360px) {
+                    font-size: 1.25rem;
                     text-align: center;
                 }
 
